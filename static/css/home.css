@@ -1,0 +1,88 @@
+body {
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+.chatbot-container{
+  max-width: 600px;
+  padding: 30px;
+  text-align: center;
+  margin-top: 40px;
+ }
+
+  /* Chatbot header */
+  .chatbot-header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Chatbot title */
+  .chatbot-title {
+    margin-bottom: 5px;
+    font-size: 45px;
+    font-weight: bold;
+    color:#ffffff
+  }
+  
+  /* Chatbot description */
+  .chatbot-description {
+    font-size: 20px;
+    color: #575e5e;
+  }
+  
+  /* Chatbot start button */
+  .api-input {
+    margin-bottom: 20px;
+}
+
+.api-input input[type="text"] {
+    max-width: 300px;
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #efeeee;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.api-input button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4f7972;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  
+  /* Chatbot start button hover effect */
+  .api-input button:hover {
+    background-color: #b3b7b5;
+  }
+
+
+  .error-message {
+  font-size: 16px;
+  color: #333333;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+p {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: unset;
+}

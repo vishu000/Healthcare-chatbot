@@ -1,0 +1,43 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatBot</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+  
+</head>
+<body>
+  <div class="chatbot-container">
+    <div class="chatbot-header">
+      <h1 class="chatbot-title">Welcome to Healthcare Chatbot</h1>
+      <p class="chatbot-description">Get instant responses from our chatbot</p>
+    </div>
+    <form class="api-input" action="" method="post">
+      {% csrf_token %}
+      <input type="text" name = "key" placeholder="Paste OpenAPI key">
+      <button type="submit">Start Chatting</button>
+    </form>
+  
+    {% for message in messages %}
+    <div class="error-message">
+      {{ message }}
+    </div>
+    {% endfor %}
+
+    <div class="link">
+      <p>
+        <a href="https://youtu.be/Ay0u4O6PoBE">Click</a> to get the OpenAPI key
+      </p>
+    </div>
+  
+  </div>
+  
+</body>
+</html>
